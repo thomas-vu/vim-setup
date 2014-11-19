@@ -1,21 +1,17 @@
-" Jan Clarin
-" .vimrc file
+" Jan Clarin's .vimrc file
 
 filetype off
 
 " Vundle plugins
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
 Plugin 'gmarik/Vundle.vim'
-
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
-
 call vundle#end()
 
 set nocompatible                " use vim settings over vi settings
