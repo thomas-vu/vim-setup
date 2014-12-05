@@ -6,8 +6,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
+Plugin 'chriskempson/base16-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
@@ -18,8 +18,12 @@ set nocompatible                " use vim settings over vi settings
 filetype plugin indent on
 syntax enable       
 
+" Theme
+set background=dark
+colorscheme base16-default
+
 " Vim-airline settings
-let g:airline_theme='solarized'
+let g:airline_theme='base16'
 let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#syntastic#enabled=1
 let g:airline#extensions#ctrlp#color_template='insert'
@@ -27,11 +31,6 @@ let g:airline#extensions#ctrlp#color_template='insert'
 " CtrlP mappings
 let g:ctrlp_map='<c-p>'
 let g:ctrlp_cmd='CtrlP'
-
-" Badwolf theme settings
-set background=light
-colorscheme solarized
-let g:badwolf_darkgutter=1
 
 " Key mappings
 nnoremap j gj
