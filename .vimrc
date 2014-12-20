@@ -28,10 +28,6 @@ let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#syntastic#enabled=1
 let g:airline#extensions#ctrlp#color_template='insert'
 
-" CtrlP mappings
-let g:ctrlp_map='<c-p>'
-let g:ctrlp_cmd='CtrlP'
-
 " Key mappings
 nnoremap j gj
 nnoremap k gk
