@@ -1,5 +1,4 @@
 " Jan Clarin's .vimrc file
-
 filetype off
 
 " Vundle plugins
@@ -11,7 +10,6 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
-Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 
 set nocompatible                " use vim settings over vi settings
@@ -43,7 +41,7 @@ set smarttab                    " use shiftwidth setting for inserting tabs
 set shiftround                  " use multiple of shiftwidth when indenting
 set autoindent                  " allow autoindentation
 set smartindent                 " use smart indentation
-set backspace=indent,eol,start  "allow backspaces over everything
+set backspace=indent,eol,start  " allow backspaces over everything
 
 " UI Config
 set number                      " show line numbers
