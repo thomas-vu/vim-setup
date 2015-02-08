@@ -5,8 +5,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized.git'
 Plugin 'bling/vim-airline'
-Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
@@ -18,10 +18,10 @@ syntax enable
 
 " Theme
 set background=dark
-colorscheme base16-default
+colorscheme solarized
 
 " Vim-airline settings
-let g:airline_theme='base16'
+let g:airline_theme='solarized'
 let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#syntastic#enabled=1
 let g:airline#extensions#ctrlp#color_template='insert'
@@ -55,6 +55,12 @@ set wildmenu                    " enable completion on the command line
 set wildmode=list:longest       " list all matches
 set showmode                    " always show current editing mode
 set visualbell                  " visual bell enabled
+
+" Highlight the 80th column
+if (exists('+colorcolumn'))
+    set colorcolumn=80
+    highlight ColorColumn ctermbg=9
+endif
 
 " Searching
 set incsearch                   " search as characters are entered
