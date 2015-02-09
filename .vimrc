@@ -56,9 +56,9 @@ set wildmode=list:longest       " list all matches
 set showmode                    " always show current editing mode
 set visualbell                  " visual bell enabled
 
-" Highlight the 80th column
+" Highlight the 81th column
 if (exists('+colorcolumn'))
-    set colorcolumn=80
+    set colorcolumn=81
     highlight ColorColumn ctermbg=9
 endif
 
