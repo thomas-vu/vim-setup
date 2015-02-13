@@ -32,8 +32,8 @@ nnoremap j gj
 nnoremap k gk
 map // :nohl<CR>
 map <C-e> :NERDTreeToggle<CR> 
-" compile any .tex file in the directory
-map <Leader>ll :! pdflatex *.tex<CR>
+" compile any .tex file in the directory silently, and refresh vim.
+map <Leader>ll :silent ! pdflatex *.tex<CR>:redraw!<CR>
 
 " Formatting
 set tabstop=4                   " number of visual spaces per tab
