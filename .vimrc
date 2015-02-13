@@ -27,10 +27,13 @@ let g:airline#extensions#syntastic#enabled=1
 let g:airline#extensions#ctrlp#color_template='insert'
 
 " Key mappings
+let mapleader=' '
 nnoremap j gj
 nnoremap k gk
 map // :nohl<CR>
 map <C-e> :NERDTreeToggle<CR> 
+" compile any .tex file in the directory
+map <Leader>ll :! pdflatex *.tex<CR>
 
 " Formatting
 set tabstop=4                   " number of visual spaces per tab
