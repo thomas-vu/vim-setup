@@ -6,9 +6,9 @@ if [ ! -d "../.vim/bundle/Vundle.vim" ]; then
     git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
-# Install Vim plugins listed in .vimrc
-vim +PluginInstall +qall
-
 # Links .vimrc in root directory with the .vimrc in cloned directory
 rm ~/.vimrc
 ln -s ~/vim-setup/.vimrc ~/.vimrc
+
+# Install Vim plugins listed in .vimrc
+vim +PluginInstall +qall
