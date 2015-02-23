@@ -5,7 +5,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
-Plugin 'altercation/vim-colors-solarized.git'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
@@ -58,12 +58,6 @@ set wildmenu                    " enable completion on the command line
 set wildmode=list:longest       " list all matches
 set showmode                    " always show current editing mode
 set visualbell                  " visual bell enabled
-
-" Highlight the 81th column
-if (exists('+colorcolumn'))
-    set colorcolumn=81
-    highlight ColorColumn ctermbg=9
-endif
 
 " Searching
 set incsearch                   " search as characters are entered
