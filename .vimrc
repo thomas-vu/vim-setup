@@ -49,7 +49,6 @@ set backspace=indent,eol,start  " allow backspaces over everything
 " UI Config
 set number                      " show line numbers
 set showcmd                     " show command in bottom bar
-set cursorline                  " highlight current line
 set splitbelow                  " split windows appear below
 set splitright                  " split windows appear to the right
 set scrolloff=5                 " maintains 5 lines above cursor when scrolling
