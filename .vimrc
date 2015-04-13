@@ -21,6 +21,9 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" YouCompleteMe settings
+let g:ycm_global_ycm_extra_conf='~/vim-setup/ycm-config/ycm_extra_conf.py'
+
 " Vim-airline settings
 let g:airline_theme='solarized'
 let g:airline#extensions#branch#enabled=1
