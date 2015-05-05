@@ -37,6 +37,8 @@ let delimitMate_expand_cr=1
 let mapleader=' '
 
 " Key mappings
+inoremap jk <esc>
+vnoremap jk <esc>
 nnoremap j gj
 nnoremap k gk
 nnoremap H ^
