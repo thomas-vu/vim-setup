@@ -12,7 +12,3 @@ ln -s ~/vim-setup/.vimrc ~/.vimrc
 
 # Install Vim plugins listed in .vimrc
 vim +PluginInstall +qall
-
-# Compile YouCompleteMe
-cd ~/.vim/bundle/YouCompleteMe
-./install.sh --clang-completer
