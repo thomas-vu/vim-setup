@@ -11,7 +11,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-fugitive'
-Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 
 set nocompatible                " use vim settings over vi settings
@@ -20,9 +19,8 @@ syntax enable
 
 " Theme
 colorscheme molokai
-
-" YouCompleteMe settings
-let g:ycm_global_ycm_extra_conf='~/vim-setup/ycm-config/ycm_extra_conf.py'
+let g:molokai_original=1
+let g:rehash256=1
 
 " Vim-airline settings
 let g:airline_theme='molokai'
@@ -72,7 +70,7 @@ set laststatus=2                " always display status line
 " Highlight the 81th column
 if (exists('+colorcolumn'))
     set colorcolumn=81
-    highlight ColorColumn ctermbg=8
+    highlight ColorColumn ctermbg=9
 endif
 
 " Editor
