@@ -18,9 +18,9 @@ filetype plugin indent on
 syntax enable       
 
 " Theme
-colorscheme molokai
-let g:molokai_original=1
 let g:rehash256=1
+let g:molokai_original=1
+colorscheme molokai
 
 " Vim-airline settings
 let g:airline_theme='molokai'
@@ -67,11 +67,6 @@ set splitbelow                  " split windows appear below
 set splitright                  " split windows appear to the right
 set scrolloff=5                 " maintains 5 lines above cursor when scrolling
 set laststatus=2                " always display status line
-" Highlight the 81th column
-if (exists('+colorcolumn'))
-    set colorcolumn=81
-    highlight ColorColumn ctermbg=9
-endif
 
 " Editor
 set encoding=utf-8              " unicode character encoding
