@@ -50,7 +50,7 @@ nnoremap <leader>h :bprevious<cr>
 nnoremap <leader>bq :bdelete<cr>
 nnoremap <leader>bl :ls<cr>
 
-nnoremap <leader>v :set paste!<cr>
+nnoremap <leader>v "+p
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
