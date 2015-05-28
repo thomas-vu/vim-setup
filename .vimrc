@@ -98,3 +98,7 @@ set smartcase                   " ignore case if all lowercase
 " Set command timeout length
 set ttimeout
 set ttimeoutlen=100
+
+" Set backup file directory.
+set backupdir=~/.vim/tmp        
+set directory=~/.vim/tmp
