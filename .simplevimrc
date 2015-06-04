@@ -1,0 +1,29 @@
+" Jan Clarin's simple .vimrc file
+
+" Set map leader
+let mapleader=' '
+inoremap jk <esc>
+vnoremap jk <esc>
+nnoremap j gj
+nnoremap k gk
+nnoremap H ^
+nnoremap L $
+" Paste from clipboard
+nnoremap <leader>v "+p
+" Remove higlighting
+nnoremap // :nohl<cr>
+
+" UI Config
+set number
+
+" Formatting
+set tabstop=4                   " number of visual spaces per tab
+set softtabstop=4               " number of spaces in tab when editing
+set shiftwidth=4                " number of spaces for autoindenting
+set expandtab                   " use spaces in place of tabs
+set smarttab                    " use shiftwidth setting for inserting tabs
+set shiftround                  " use multiple of shiftwidth when indenting
+set autoindent                  " allow autoindentation
+set copyindent                  " copy previous level of indentation
+set backspace=indent,eol,start  " allow backspaces over everything
+

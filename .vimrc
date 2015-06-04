@@ -41,6 +41,10 @@ nnoremap j gj
 nnoremap k gk
 nnoremap H ^
 nnoremap L $
+" Paste from clipboard
+nnoremap <leader>v "+p
+" Remove higlighting
+nnoremap // :nohl<cr>
 
 " Buffer managing mappings
 nnoremap <leader>be :edit 
@@ -50,33 +54,27 @@ nnoremap <leader>h :bprevious<cr>
 nnoremap <leader>bq :bdelete<cr>
 nnoremap <leader>bl :ls<cr>
 
-nnoremap <leader>v "+p
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-map // :nohl<cr>
 map <C-e> :NERDTreeToggle<cr> 
 map <leader>tt :silent ! pdflatex *.tex<cr>:redraw!<cr>
 " compile any .tex file in the directory silently, and refresh vim.
 
 " UI Config
+set encoding=utf-8              " unicode character encoding
 set number                      " show line numbers
-set hidden                      " hides buffers
+set ruler                       " show ruler
 set showcmd                     " show command in bottom bar
-set splitbelow                  " split windows appear below
-set splitright                  " split windows appear to the right
+set showmode                    " always show current editing mode
 set scrolloff=5                 " maintains 5 lines above cursor when scrolling
 set laststatus=2                " always display status line
-
-" Editor
-set encoding=utf-8              " unicode character encoding
-set ruler                       " show ruler
-set showcmd                     " show in-progress command
-set showmode                    " always show current editing mode
+set visualbell                  " visual bell enabled
+set splitbelow                  " split windows appear below
+set splitright                  " split windows appear to the right
 set wildmenu                    " enable completion on the command line
 set wildmode=list:longest       " list all matches
 set ttyfast                     " fast terminal connection
-set visualbell                  " visual bell enabled
 
 " Formatting
 set tabstop=4                   " number of visual spaces per tab
