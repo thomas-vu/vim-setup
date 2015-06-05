@@ -35,16 +35,17 @@ let delimitMate_expand_cr=1
 let mapleader=' '
 
 " Key mappings
+inoremap <esc> <nop>
 inoremap jk <esc>
-vnoremap jk <esc>
+vnoremap v <esc>
 nnoremap j gj
 nnoremap k gk
 nnoremap H ^
 nnoremap L $
-" Paste from clipboard
-nnoremap <leader>v "+p
-" Remove higlighting
+" Remove highlighting
 nnoremap // :nohl<cr>
+" Paste from clipboard
+nnoremap <leader>"+p
 
 " Buffer managing mappings
 nnoremap <leader>be :edit 
