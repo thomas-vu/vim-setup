@@ -2,16 +2,17 @@
 
 " Set map leader
 let mapleader=' '
+inoremap <esc> <nop>
 inoremap jk <esc>
-vnoremap jk <esc>
+vnoremap v <esc>
 nnoremap j gj
 nnoremap k gk
 nnoremap H ^
 nnoremap L $
-" Paste from clipboard
-nnoremap <leader>v "+p
 " Remove higlighting
 nnoremap // :nohl<cr>
+" Paste from clipboard
+nnoremap <leader>v "+p
 
 " UI Config
 set number
