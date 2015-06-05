@@ -35,7 +35,6 @@ let delimitMate_expand_cr=1
 let mapleader=' '
 
 " Key mappings
-inoremap <esc> <nop>
 inoremap jk <esc>
 vnoremap v <esc>
 nnoremap j gj
@@ -45,7 +44,7 @@ nnoremap L $
 " Remove highlighting
 nnoremap // :nohl<cr>
 " Paste from clipboard
-nnoremap <leader>"+p
+nnoremap <leader>v "+p
 
 " Buffer managing mappings
 nnoremap <leader>be :edit 
