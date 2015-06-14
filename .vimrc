@@ -87,6 +87,10 @@ set autoindent                  " allow autoindentation
 set copyindent                  " copy previous level of indentation
 set backspace=indent,eol,start  " allow backspaces over everything
 
+" Use 2-space tabs for html/css as per Google Style guidelines
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+autocmd Filetype css setlocal ts=2 sts=2 sw=2
+
 " Searching
 set incsearch                   " search as characters are entered
 set hlsearch                    " highlight matches
