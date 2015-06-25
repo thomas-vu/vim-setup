@@ -57,9 +57,6 @@ nnoremap // :nohl<cr>
 " Paste from clipboard
 nnoremap <leader>v "+p
 
-" ctrlp mappings
-nnoremap <leader>p :CtrlP<cr>
-
 " Buffer managing mappings
 nnoremap <leader>be :edit 
 nnoremap <leader>ba :badd 
@@ -68,6 +65,17 @@ nnoremap <leader>h :bprevious<cr>
 nnoremap <leader>bq :bdelete<cr>
 nnoremap <leader>bl :ls<cr>
 
+" ctrlp mappings
+nnoremap <leader>p :CtrlP<cr>
+
+" vim fugitive mappings
+nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>gd :Gdiff<cr>
+nnoremap <leader>gl :Glog<cr>
+nnoremap <leader>gg :Ggrep
+
+
+" vimrc mappings
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
