@@ -1,3 +1,4 @@
-###Current .vimrc file and plugins
-
-#####Clone this repository into the root folder and run the bash script to install it.
+#My .vimrc file
+###To use:
+1. Clone the repo into your root home folder
+2. Run `./setup.sh [--simple]` (use the `--simple` argument to install `.simplevimrc` instead)
