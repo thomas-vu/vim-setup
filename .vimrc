@@ -6,9 +6,14 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'myusuf3/numbers.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
+Plugin 'skammer/vim-css-color'
 Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-fugitive'
 call vundle#end()
@@ -22,11 +27,17 @@ let g:rehash256=1
 let g:molokai_original=1
 colorscheme molokai
 
-" Vim-airline settings
+" vim-airline settings
 let g:airline_theme='molokai'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#syntastic#enabled=1
+
+" ctrlp settings
+" set working directory to nearest ancestor with .git
+let g:ctrlp_working_path_mode='ra' 
+let g:ctrlp_show_hidden=0
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip " ignore certain files
 
 " delimitMate settings
 let delimitMate_expand_cr=1
@@ -45,6 +56,9 @@ nnoremap L $
 nnoremap // :nohl<cr>
 " Paste from clipboard
 nnoremap <leader>v "+p
+
+" ctrlp mappings
+nnoremap <leader>p :CtrlP<cr>
 
 " Buffer managing mappings
 nnoremap <leader>be :edit 
