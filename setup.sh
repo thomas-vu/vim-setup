@@ -2,16 +2,20 @@
 
 # Usage: ./setup.sh [--simple]
 
+# Folder
+echo `ls ~/`
+SETUP_DIR="$( cd "$( dirname "$0" )" && pwd )"
+
 # Remove current .vimrc file.
 rm ~/.vimrc
 
 if [[ $1 == "--simple" ]]; then
     # Link the simple .vimrc file.
-    ln -s ~/vim-setup/.simplevimrc ~/.vimrc
+    ln -s $SETUP_DIR/.simplevimrc ~/.vimrc
 else
     # Install Vundle plugin.
     mkdir -p ~/.vim/bundle
-    if [ ! -d "~/.vim/bundle/Vundle.vim" ]; then
+    if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
         git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     fi
 
@@ -19,7 +23,7 @@ else
     mkdir -p ~/.vim/tmp
 
     # Links .vimrc in root directory with the .vimrc in cloned directory.
-    ln -s ~/vim-setup/.vimrc ~/.vimrc
+    ln -s $SETUP_DIR/.vimrc ~/.vimrc
 
     # Install Vim plugins listed in .vimrc.
     vim +PluginInstall +qall
