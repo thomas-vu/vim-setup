@@ -5,6 +5,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'jelera/vim-javascript-syntax'
@@ -12,7 +13,6 @@ Plugin 'myusuf3/numbers.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
-Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-fugitive'
 call vundle#end()
 
@@ -21,12 +21,11 @@ filetype plugin indent on
 syntax enable       
 
 " Theme
-let g:rehash256=1
-let g:molokai_original=1
-colorscheme molokai
+set background=dark
+colorscheme solarized
 
 " vim-airline settings
-let g:airline_theme='molokai'
+let g:airline_theme='solarized'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#syntastic#enabled=1
