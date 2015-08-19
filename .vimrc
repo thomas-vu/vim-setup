@@ -62,7 +62,8 @@ nnoremap <leader>h :bprevious<cr>
 nnoremap <leader>bq :bdelete<cr>
 nnoremap <leader>bl :ls<cr>
 
-" ctrlp mappings
+" File manager mappings
+nnoremap <leader>e :NERDTreeToggle<cr> 
 nnoremap <leader>p :CtrlP<cr>
 
 " vim fugitive mappings
@@ -71,12 +72,6 @@ nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>gl :Glog<cr>
 nnoremap <leader>gg :Ggrep
 
-
-" vimrc mappings
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
-
-map <C-e> :NERDTreeToggle<cr> 
 map <leader>tt :silent ! pdflatex *.tex<cr>:redraw!<cr>
 " compile any .tex file in the directory silently, and refresh vim.
 
