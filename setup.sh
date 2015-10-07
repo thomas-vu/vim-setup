@@ -6,8 +6,10 @@
 echo `ls ~/`
 SETUP_DIR="$( cd "$( dirname "$0" )" && pwd )"
 
-# Remove current .vimrc file.
-rm ~/.vimrc
+# Remove current .vimrc file if it exists.
+if [[ -e ~/.vimrc ]]; then
+    rm ~/.vimrc
+fi
 
 if [[ $1 == "--simple" ]]; then
     # Link the simple .vimrc file.
