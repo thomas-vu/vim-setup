@@ -7,7 +7,7 @@ echo `ls ~/`
 SETUP_DIR="$( cd "$( dirname "$0" )" && pwd )"
 
 # Remove current .vimrc file if it exists.
-if [[ -e ~/.vimrc ]]; then
+if [ -e ~/.vimrc ]; then
     rm ~/.vimrc
 fi
 
