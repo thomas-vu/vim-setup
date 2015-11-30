@@ -37,6 +37,9 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip " ignore certain files
 " delimitMate settings
 let delimitMate_expand_cr=1
 
+" syntastic settings
+let g:syntastic_python_python_exec = '/usr/local/bin/python3'
+
 " Set map leader
 let mapleader=' '
 
