@@ -6,12 +6,15 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'OmniSharp/omnisharp-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-fugitive'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 
 set nocompatible                " use vim settings over vi settings
@@ -76,6 +79,11 @@ nnoremap <leader>gg :Ggrep
 map <leader>tt :silent ! pdflatex *.tex<cr>:redraw!<cr>
 " compile any .tex file in the directory silently, and refresh vim.
 
+" Language configs
+" Use 2-space tabs for html/css as per Google Style guidelines
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+autocmd Filetype css setlocal ts=2 sts=2 sw=2
+
 " UI Config
 set encoding=utf-8              " unicode character encoding
 set number                      " show line numbers
@@ -101,10 +109,6 @@ set shiftround                  " use multiple of shiftwidth when indenting
 set autoindent                  " allow autoindentation
 set copyindent                  " copy previous level of indentation
 set backspace=indent,eol,start  " allow backspaces over everything
-
-" Use 2-space tabs for html/css as per Google Style guidelines
-autocmd Filetype html setlocal ts=2 sts=2 sw=2
-autocmd Filetype css setlocal ts=2 sts=2 sw=2
 
 " Searching
 set incsearch                   " search as characters are entered
