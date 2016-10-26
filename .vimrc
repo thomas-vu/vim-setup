@@ -41,8 +41,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip " ignore certain files
 let delimitMate_expand_cr=1
 
 " syntastic settings
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_python_exec = '/usr/local/bin/python3'
