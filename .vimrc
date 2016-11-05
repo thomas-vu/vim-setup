@@ -6,15 +6,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'kien/ctrlp.vim'
-Plugin 'jelera/vim-javascript-syntax'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-dispatch'
-Plugin 'tpope/vim-fugitive'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 
 set nocompatible                " use vim settings over vi settings
@@ -24,18 +18,6 @@ syntax enable
 " Theme
 set background=dark
 colorscheme solarized
-
-" vim-airline settings
-let g:airline_theme='solarized'
-let g:airline#extensions#tabline#enabled=1
-let g:airline#extensions#branch#enabled=1
-let g:airline#extensions#syntastic#enabled=1
-
-" ctrlp settings
-" set working directory to nearest ancestor with .git
-let g:ctrlp_working_path_mode='ra' 
-let g:ctrlp_show_hidden=0
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip " ignore certain files
 
 " delimitMate settings
 let delimitMate_expand_cr=1
@@ -71,16 +53,6 @@ nnoremap <leader>bl :ls<cr>
 
 " File manager mappings
 nnoremap <leader>e :NERDTreeToggle<cr> 
-nnoremap <leader>p :CtrlP<cr>
-
-" vim fugitive mappings
-nnoremap <leader>gs :Gstatus<cr>
-nnoremap <leader>gd :Gdiff<cr>
-nnoremap <leader>gl :Glog<cr>
-nnoremap <leader>gg :Ggrep
-
-map <leader>tt :silent ! pdflatex *.tex<cr>:redraw!<cr>
-" compile any .tex file in the directory silently, and refresh vim.
 
 " Language configs
 " Use 2-space tabs for html/css as per Google Style guidelines
@@ -88,6 +60,7 @@ autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype css setlocal ts=2 sts=2 sw=2
 
 " UI Config
+set hidden                      " keeps buffers when abandoned"
 set encoding=utf-8              " unicode character encoding
 set number                      " show line numbers
 set ruler                       " show ruler
