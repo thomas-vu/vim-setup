@@ -60,7 +60,8 @@ autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype css setlocal ts=2 sts=2 sw=2
 
 " UI Config
-set hidden                      " keeps buffers when abandoned"
+set mouse=a                     " enable mouse support
+set hidden                      " keeps buffers when abandoned
 set encoding=utf-8              " unicode character encoding
 set number                      " show line numbers
 set ruler                       " show ruler
