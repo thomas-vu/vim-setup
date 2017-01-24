@@ -73,8 +73,10 @@ nnoremap <leader>gg :Ggrep
 " Use 2-space tabs for html/css as per Google Style guidelines
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype css setlocal ts=2 sts=2 sw=2
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 
 " UI Config
+set colorcolumn=80              " set marker at column 80
 set mouse=a                     " enable mouse support
 set hidden                      " keeps buffers when abandoned
 set encoding=utf-8              " unicode character encoding
