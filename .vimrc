@@ -7,6 +7,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Raimondi/delimitMate'
+Plugin 'mxw/vim-jsx'
+Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
@@ -23,18 +25,21 @@ colorscheme solarized
 
 " vim-airline settings
 let g:airline_theme='solarized'
-let g:airline#extensions#tabline#enabled=1
-let g:airline#extensions#branch#enabled=1
-let g:airline#extensions#syntastic#enabled=1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#syntastic#enabled = 1
 
 " delimitMate settings
-let delimitMate_expand_cr=1
+let delimitMate_expand_cr = 1
 
 " syntastic settings
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_python_exec = '/usr/local/bin/python3'
 let g:syntastic_haskell_checkers = ['hlint', 'ghc_mod']
+
+" vim-jsx settings
+let g:jsx_ext_required = 0
 
 " Set map leader
 let mapleader=' '
