@@ -10,9 +10,9 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'w0rp/ale'
 call vundle#end()
 
 set nocompatible                " use vim settings over vi settings
@@ -31,12 +31,6 @@ let g:airline#extensions#syntastic#enabled = 1
 
 " delimitMate settings
 let delimitMate_expand_cr = 1
-
-" syntastic settings
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_python_python_exec = '/usr/local/bin/python3'
-let g:syntastic_haskell_checkers = ['hlint', 'ghc_mod']
 
 " vim-jsx settings
 let g:jsx_ext_required = 0
