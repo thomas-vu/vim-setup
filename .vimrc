@@ -69,10 +69,11 @@ nnoremap <leader>gl :Glog<cr>
 nnoremap <leader>gg :Ggrep
 
 " Language configs
-" Use 2-space tabs for html/css as per Google Style guidelines
-autocmd Filetype html setlocal ts=2 sts=2 sw=2
-autocmd Filetype css setlocal ts=2 sts=2 sw=2
-autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
+" HTML/CSS/JavaScript: Use 2-space tabs as per Google Style guidelines
+au BufNewFile,BufRead *.js, *.html, *.css
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2
 
 " UI Config
 set colorcolumn=80              " set marker at column 80
