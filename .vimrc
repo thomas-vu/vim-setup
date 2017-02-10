@@ -13,6 +13,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'w0rp/ale'
 call vundle#end()
 
