@@ -6,14 +6,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'Raimondi/delimitMate'
+Plugin 'klen/python-mode'
 Plugin 'mxw/vim-jsx'
-Plugin 'nvie/vim-flake8'
 Plugin 'pangloss/vim-javascript'
+Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'w0rp/ale'
 call vundle#end()
 
@@ -27,15 +26,27 @@ colorscheme solarized
 
 " vim-airline settings
 let g:airline_theme='solarized'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#branch#enabled = 1
-let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#branch#enabled=1
+let g:airline#extensions#syntastic#enabled=1
 
 " delimitMate settings
-let delimitMate_expand_cr = 1
+let delimitMate_expand_cr=1
 
 " vim-jsx settings
-let g:jsx_ext_required = 0
+let g:jsx_ext_required=0
+
+" python-mode settings
+let g:pymode_folding=0
+let g:pymode_lint=1
+let g:pymode_python='python3'
+let g:pymode_rope=0
+let g:pymode_run=0
+let g:pymode_syntax=1
+let g:pymode_syntax_all=1
+let g:pymode_syntax_indent_errors=g:pymode_syntax_all
+let g:pymode_syntax_space_errors=g:pymode_syntax_all
+let g:pymode_virtualenv=1
 
 " Set map leader
 let mapleader=' '
