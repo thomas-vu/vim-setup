@@ -37,6 +37,7 @@ let delimitMate_expand_cr=1
 let g:jsx_ext_required=0
 
 " python-mode settings
+let g:pymode_breakpoint=0
 let g:pymode_folding=0
 let g:pymode_lint=1
 let g:pymode_python='python3'
