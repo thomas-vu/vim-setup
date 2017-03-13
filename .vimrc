@@ -95,6 +95,7 @@ set mouse=a                     " enable mouse support
 set hidden                      " keeps buffers when abandoned
 set encoding=utf-8              " unicode character encoding
 set number                      " show line numbers
+set relativenumber              " display line numbers relative to cursor
 set ruler                       " show ruler
 set showcmd                     " show command in bottom bar
 set showmode                    " always show current editing mode
